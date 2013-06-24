@@ -1,0 +1,520 @@
+@import url(../fonts/fonts.css);
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url("../images/bg.png") repeat 0 0;
+}
+ul, li, p, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+.clear {
+    clear:both;
+    overflow: hidden;
+    height: 0px;
+}
+.wrapper {
+    min-width: 1024px;
+    max-width: 1440px;
+    width:100%;
+    margin: 0 auto -81px;
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    background: #f4f2e9;
+}
+.push {
+    height: 81px;
+}
+/*.main-page-wrapper {*/
+    /*min-height: 820px;*/
+/*}*/
+.horizontal-top-repeat {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    background: url("../images/top-horizontal-repeat.png") repeat-x 0 0;
+    height: 353px;
+    z-index: 0;
+}
+.horizontal-bottom-repeat {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background: url("../images/bottom-horizontal-repeat.png") repeat-x 0 0;
+    height: 353px;
+    z-index: 0;
+}
+.vertical-left-repeat {
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom: 0;
+    background: url("../images/left-vertical-repeat.png") repeat-y 0 0;
+    height: 100%;
+    z-index: 0;
+    width: 512px;
+}
+.vertical-right-repeat {
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom:0;
+    width: 500px;
+    background: url("../images/right-vertical-repeat.png") repeat-y 0 0;
+    height: 100%;
+    z-index: 0;
+}
+.left-top-corner {
+    background: url("../images/left-top-corner.png") no-repeat 0 0;
+    width: 512px;
+    height: 352px;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 2;
+}
+.right-top-corner {
+    background: url("../images/right-top-corner.png") no-repeat 1px 0;
+    width: 500px;
+    height: 352px;
+    position: absolute;
+    right: 0;
+    top:0;
+    z-index: 2;
+}
+.left-bottom-corner {
+    background: url("../images/left-bottom-corner.png") no-repeat 0 0;
+    width: 512px;
+    height: 388px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    z-index: 2;
+}
+.right-bottom-corner {
+    background: url("../images/right-bottom-corner.png") no-repeat 0 0;
+    width: 500px;
+    height: 388px;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    z-index: 2;
+}
+.layout {
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+.logo {
+    display: block;
+    text-decoration: none;
+    border: none;
+    width: 244px;
+    margin: 48px auto 0;
+}
+.logo img {
+    border: none;
+}
+.slider-bg {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 310px;
+    top:122px;
+}
+.slider-left-part {
+    background: url("../images/slider-bg-l.png") no-repeat 0 0;
+    width: 509px;
+    height: 310px;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.slider-right-part {
+    background: url("../images/slider-bg-r.png") no-repeat 0 0;
+    width: 514px;
+    height: 310px;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.slider-center-part {
+    background: url("../images/slider-bg-c.png") repeat-x 0 0;
+    left: 509px;
+    right:514px;
+    height: 310px;
+    position: absolute;
+}
+.help {
+    position: absolute;
+    left: 23px;
+    top:15px;
+    opacity: 0.7;
+    width: 12px;
+    height: 25px;
+    background: url("../images/icons.png") no-repeat -39px 0;
+}
+.help:hover {
+    opacity: 1;
+}
+.log-key {
+    position: absolute;
+    right: 23px;
+    top:15px;
+    width: 18px;
+    height: 25px;
+    background: url("../images/icons.png") no-repeat 0 0;
+}
+.log-key:hover {
+    background-position: -19px 0;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 26px;
+}
+.slider,
+.slider ul,
+.slider li {
+    width: 100%;
+    height: 310px;
+}
+.slider li {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.slider li img {
+    margin-top: 42px;
+}
+.slide-to {
+    width: 42px;
+    height: 49px;
+    background: url("../images/slider-controls.png") no-repeat 0 0;
+    position: absolute;
+    top:50%;
+    margin-top: -24px;
+    cursor: pointer;
+    z-index: 2;
+}
+.slide-to-left {
+    left: -33px;
+}
+.slide-to-right {
+    right: -33px;
+    background-position: -42px;
+}
+.content {
+    margin: 25px 64px;
+}
+.col {
+    float: left;
+}
+.col h2 {
+    font-family: franklingothicbookxcmpcRg, sans-serif;
+    font-weight: normal;
+    font-size: 42px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+.col p {
+    font-family: FranklinGothicMediumCondRegular, sans-serif;
+    color: #333333;
+    font-size: 14px;
+    line-height:18px;
+}
+.col1 {
+    width: 35.7%;
+}
+.col2 {
+    width: 33.9%;
+}
+.col3 {
+    width: 30.4%;
+}
+.col1 p,
+.col1 h2 {
+    margin:0 48px 5px 48px;
+}
+.col2 p,
+.col2 h2 {
+    margin-right: 48px;
+}
+.menu-button {
+    font-family: franklingothicbookxcmpcRg, sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    color: #333333;
+    position: absolute;
+    height: 59px;
+    left: 0;
+    top:-1px;
+    display: none;
+}
+.menu-button .left-part-b,
+.menu-button .right-part-b {
+    width: 107px;
+    height: 59px;
+    background: url("../images/btn-left.png") no-repeat 0 0;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 1;
+}
+.menu-button .right-part-b {
+    background: url("../images/btn-right.png") no-repeat right 0;
+    left: auto;
+    right: 0;
+}
+.menu-button .bg {
+    background: url("../images/btn-bg.png") repeat-x 0 0;
+    height: 59px;
+    position: absolute;
+    z-index: 0;
+    left: 107px;
+    right: 107px;
+}
+.menu {
+    min-width: 898px;
+    width: 100%;
+    height: 59px;
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+}
+.menu ul {
+    padding-top: 11px;
+}
+.menu .left-part,
+.menu .right-part {
+    height: 59px;
+    background: url("../images/menu.png") no-repeat 0 0;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 1;
+    width: 449px;
+}
+.menu .right-part {
+    background-position: right 0;
+    left: auto;
+    right: 0;
+}
+.menu .menu-bg {
+    background: url("../images/menu-bg.png") repeat-x 0 0;
+    position: absolute;
+    height: 59px;
+    left: 449px;
+    right: 449px;
+}
+.menu li {
+    display: block;
+    width: 15%;
+    position: relative;
+    z-index: 3;
+    float: left;
+}
+.menu li a {
+    font-family: franklingothicbookxcmpcRg, sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    color: #333333;
+    display: inline-block;
+    text-decoration: none;
+}
+.menu li a.hovered {
+    color: #fff;
+}
+.menu li.registration-button {
+    width: 40%;
+}
+.menu li.registration-button a {
+    font-size: 31px;
+}
+.menu li.font28 a {
+    font-size: 28px;
+}
+/*------------------------------------FOOTER -----------------------------------------*/
+.footer {
+    position: relative;
+    height: 81px;
+    overflow: hidden;
+    z-index: 5;
+    min-width: 1024px;
+    max-width: 1440px;
+    width:100%;
+    margin: 0 auto ;
+}
+.footer .col {
+    float: left;
+    opacity: 0.1;
+    position: relative;
+    top:2px;
+}
+.footer .col1 {
+    background: url("../images/footer.png") no-repeat 0 0;
+    width: 148px;
+    height: 102px;
+    margin: 0 5% 0 55px;
+}
+.footer .col2 {
+    font-family: franklingothicbookxcmpcRg, sans-serif;
+    font-weight: normal;
+    font-size: 23px;
+    color: #434343;
+    width: 47%;
+}
+.footer .col3 {
+    width: 250px;
+    float: right;
+    margin-right: 25px;
+}
+.footer .col3 a {
+    display: inline-block;
+    background: url("../images/partners.png") no-repeat 0 0;
+    margin: 0 75px 23px 0;
+}
+.footer .col3 a.disney {
+    width: 43px;
+    height: 22px;
+    background-position: -2px 0;
+}
+.footer .col3 a.forbes {
+    width: 43px;
+    height: 22px;
+    background-position: -120px 0;
+}
+.footer .col3 a.twoXtwo {
+    width: 43px;
+    height: 22px;
+    background-position: -2px -40px;
+}
+.footer .col3 a.glamour {
+    width: 43px;
+    height: 22px;
+    background-position: -120px -40px;
+}
+.footer .col3 a.cosmopolitan {
+    width: 47px;
+    height: 22px;
+    background-position: -2px -80px;
+    margin-right: 71px;
+}
+.footer .col3 a.muz {
+    width: 43px;
+    height: 22px;
+    background-position: -120px -80px;
+}
+.questions {
+    width: 576px;
+    height: 82px;
+    background: url("../images/question-bg.png") no-repeat center top;
+    position: absolute;
+    left: 50%;
+    top: 57px;
+    margin-left: -288px;
+    text-align: center;
+}
+.questions .ask {
+    margin: 5px auto;
+    font-family: FranklinGothicMediumCondRegular, sans-serif;
+    font-size: 13px;
+    color: #f4f2e9;
+    cursor: pointer;
+    display: inline-block;
+}
+.question-tems {
+    margin-top: 17px;
+}
+.question-tems a {
+    display: inline-block;
+    color: #fff;
+    font-family: FranklinGothicMediumCondRegular, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 9px;
+}
+.question-tems a:hover {
+    text-decoration: underline;
+}
+/*------------------------- POPUP (LOGIN AND REGISTERATION)------------------------*/
+.popup {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    background: url("../images/pop-up.png") no-repeat center center;
+    display: none;
+}
+.log-reg-wrap {
+    position: absolute;
+    width: 362px;
+    height: 396px;
+    top:50%;
+    left: 50%;
+    margin: -215px 0 0 -181px;
+}
+.reg-btn,
+.log-btn {
+    background: url("../images/reg-btn.png") no-repeat 0 0;
+    width: 361px;
+    height: 48px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -2px;
+    left: 1px;
+    text-align: center;
+    font-family: franklingothicbookxcmpcRg, sans-serif;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 11px;
+}
+.close {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: -21px;
+    top:-15px;
+    background: url("../images/close-popup.png") no-repeat 0 0;
+    cursor: pointer;
+}
+.registration-layout .close {
+    background-position: -15px;
+}
+.log-btn {
+    background: url("../images/log-btn.png") no-repeat 0 0;
+    left: 2px;
+    color: #ebb013;
+    bottom: -6px;
+}
+.login-layout {
+    background: url("../images/log-bg.png") no-repeat 0 0;
+    width: 362px;
+    height: 396px;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.registration-layout {
+    background: url("../images/reg-bg.png") no-repeat 0 0;
+    width: 362px;
+    height: 396px;
+    position: absolute;
+    left: 0;
+    top:0;
+    display: none;
+}

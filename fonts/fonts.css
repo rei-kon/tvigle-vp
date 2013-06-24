@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'FranklinGothicMediumCondRegular';
+    src: url('framdcn.eot');
+    src: url('framdcn.eot') format('embedded-opentype'),
+    url('framdcn.woff') format('woff'),
+    url('framdcn.ttf') format('truetype'),
+    url('framdcn.svg#FranklinGothicMediumCondRegular') format('svg');
+}
+@font-face {
+    font-family: 'fontawesomeregular';
+    src: url('fontawesome-webfont-webfont.eot');
+    src: url('fontawesome-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fontawesome-webfont-webfont.woff') format('woff'),
+    url('fontawesome-webfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'franklingothicbookxcmpcRg';
+    src: url('franklingothicbookxcmpc-webfont.eot');
+    src: url('franklingothicbookxcmpc-webfont.eot?#iefix') format('embedded-opentype'),
+    url('franklingothicbookxcmpc-webfont.woff') format('woff'),
+    url('franklingothicbookxcmpc-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
