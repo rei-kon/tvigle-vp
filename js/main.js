@@ -270,4 +270,28 @@ $(document).ready(function(){
     $('body').delegate('.log-reg-button', 'click', function(){
         NewPopup.open();
     });
+
+
+    $('.capabilities .toggle').on('click', function(e){
+        e.preventDefault();
+        var _this = $(this),
+            btnClose = _this.find('.clos'),
+            btnOpen = _this.find('.open'),
+            parent = _this.closest('.one'),
+            fullText = parent.find('.full-text');
+        if ( parent.hasClass('closed') ) {
+            btnClose.fadeIn();
+            btnOpen.fadeOut();
+            fullText.slideDown(600,function(){
+               parent.removeClass('closed');
+            });
+        } else {
+            btnClose.fadeOut();
+            btnOpen.fadeIn();
+            fullText.slideUp(600,function(){
+               parent.addClass('closed');
+            });
+        }
+    });
+
 });

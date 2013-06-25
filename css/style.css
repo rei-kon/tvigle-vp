@@ -13,6 +13,16 @@ ul, li, p, h1, h2 {
 ul, li {
     list-style: none;
 }
+ul.dashed {}
+ul.dashed li {
+    padding-left: 15px; 
+    position: relative;
+}
+ul.dashed li:before {
+    content: "— ";
+    position: absolute;
+    left: 0px;
+   }
 .clear {
     clear:both;
     overflow: hidden;
@@ -386,9 +396,12 @@ ul, li {
     transition: color 200ms linear 0s;
 }
 .submenu ul li a:hover {
-    color: #f15612;
+    color: #000;
     transition: color 200ms linear 0s;
 }
+.submenu ul li.active a {
+    color: #f15612;
+} 
 .pagetext {
     margin-left: 330px;
     padding-top: 36px;
@@ -467,15 +480,132 @@ ul, li {
     display: inline-block;
     position: relative;
 }
-.btn-try span {
-    padding-left: 43px;
-    position: relative;
-    top: -2px;
-}
-.btn-try:hover {
-    background-color: #f15612;
-    transition: background-color 200ms linear 0s;
-}
+    .btn-try span {
+        padding-left: 43px;
+        position: relative;
+        top: -2px;
+    }
+    .btn-try:hover {
+        background-color: #f15612;
+        transition: background-color 200ms linear 0s;
+    }
+
+.capabilities {
+    font-family: FranklinGothicMediumCondRegular,sans-serif;
+    color: #a6a49f;
+    font-size: 16px;
+    }   
+    .capabilities .one {
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .capabilities h2 {
+        font-size: 30px;
+    }
+    .capabilities .text {
+        padding-right: 100px;
+        position: relative;
+        margin-bottom: 25px;
+        }
+        .capabilities .text .icon {
+            position: absolute;
+            top: 50%;
+            margin-top: -17px;
+            left: -83px;
+        }
+    .capabilities .toggle {
+            position: absolute;
+            display: block;
+            top: 36px;
+            right:-22px;
+        }
+        .capabilities .toggle span {
+            display: block;
+            width: 42px;
+            height: 49px;
+            border-bottom-left-radius: 5px 100%;
+            border-top-left-radius: 5px 100%;
+            -webkit-border-bottom-left-radius: 5px 100%;
+            -webkit-border-top-left-radius: 5px 100%;
+            position: absolute; 
+            top: 0;
+            left: 0;
+        }
+        .capabilities .toggle .open {
+            background: #ebb116  url('../images/char-gt.png') no-repeat center center;
+        }
+        .capabilities .toggle .clos {
+            background: #333333 url('../images/char-x.png') no-repeat center center;
+            display: none;
+        }
+    .capabilities .line {
+        height: 11px;
+        background: url("../images/capabilities-line.png") no-repeat right top;
+        margin: 0 0 0 0 ;
+    }
+    .capabilities .full-text {
+        display: none;
+        color: #434343;
+        line-height: 1.5em;        
+        padding-bottom: 25px;
+        }
+        .capabilities .full-text h3 {
+            font-size: 20px;
+            font-weight: normal;
+            color: #ebaf0f;
+            margin: 0 0 15px 0;
+        }
+        .capabilities .full-text h3,
+        .capabilities .full-text .cont {
+            padding-right: 150px;
+        }
+        .capabilities .full-text .smbr {
+            margin-bottom: 5px;
+        }
+        .capabilities .full-text .line {
+            margin: 0 0 15px 0 ;
+        }
+        .capabilities .full-text .small {
+            font-size: 14px;
+        }
+        .capabilities .imaged-box {
+            position: relative;
+            display: table;
+        }
+        .capabilities .imaged-box .img {
+            padding: 5px 25px 0 0;
+            display: table-cell;
+            vertical-align: top;
+        }
+        .capabilities .imaged-box .txt {
+            display: table-cell;
+            vertical-align: top;
+        }
+        .gallery {
+
+            }
+            .gallery .thumb { 
+                display: inline-block; 
+                width: 100px; 
+                height: 90px;
+                overflow: hidden;
+                position: relative;
+            }
+            .gallery .thumb img { 
+                position: relative;
+            }
+            .gallery .thumb .mask {
+                width: 100px;
+                height: 90px;
+                display: block;
+                position: absolute;
+                top:0;
+                left: 0;
+                outline: 0;
+                background: url("../images/img-mask.png") no-repeat 0 0;
+            }
+
+
 /*------------------------------------FOOTER -----------------------------------------*/
 .footer {
     position: relative;
