@@ -568,18 +568,25 @@ ul.dashed li:before {
         .capabilities .full-text .small {
             font-size: 14px;
         }
-        .capabilities .imaged-box {
+        .imaged-box {
             position: relative;
             display: table;
         }
-        .capabilities .imaged-box .img {
+        .imaged-box .img {
             padding: 5px 25px 0 0;
             display: table-cell;
             vertical-align: top;
         }
-        .capabilities .imaged-box .txt {
+        .imaged-box .txt {
             display: table-cell;
             vertical-align: top;
+            font-family: FranklinGothicMediumCondRegular,sans-serif;
+        }
+        .imaged-box .big {
+            font-size: 18px;
+        }
+        .imaged-box .gray {
+            color: #a6a49f;
         }
         .gallery {
 
@@ -604,6 +611,25 @@ ul.dashed li:before {
                 outline: 0;
                 background: url("../images/img-mask.png") no-repeat 0 0;
             }
+
+.distribution {}
+    .distribution .list {
+        padding-right: 100px;
+    }
+    .distribution .list li {
+        /*width: 310px;*/
+    }
+    .distribution .list li.d01 {
+        margin-top: 10px;
+        height: 78px;
+    }
+    .distribution .list li.d02 {
+        height: 100px;
+    }
+    .distribution .list li.d03 {
+        height: 55px;
+    }
+    .distribution .list li.d04 {}
 
 
 /*------------------------------------FOOTER -----------------------------------------*/
