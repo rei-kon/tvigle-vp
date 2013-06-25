@@ -631,6 +631,27 @@ ul.dashed li:before {
     }
     .distribution .list li.d04 {}
 
+.vp-player {}
+    .vp-player .imaged-box {
+        margin-bottom: 10px;
+    }
+    .vp-player .list {
+        padding-right: 100px;
+    }
+    .vp-player .list li {
+        /*width: 310px;*/
+    }
+    .vp-player .list li.d01 {
+        margin-top: 10px;
+        height: 55px;
+    }
+    .vp-player .list li.d02 {
+        height: 105px;
+    }
+    .vp-player .list li.d03 {
+        height: 65px;
+    }
+    .vp-player .list li.d04 {}
 
 /*------------------------------------FOOTER -----------------------------------------*/
 .footer {
