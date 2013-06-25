@@ -653,6 +653,31 @@ ul.dashed li:before {
     }
     .vp-player .list li.d04 {}
 
+.webmobtv {}
+    .webmobtv p {
+        height: 42px;
+    }
+    .webmobtv h3 {
+        font-family: franklingothicbookxcmpcRg,sans-serif;
+        font-size: 26px;
+        color: #ebaf0f;
+        font-weight: normal;
+        position: relative;
+        margin: 0;
+    }
+    .webmobtv .imaged-box {
+        height: 137px;
+    }
+    .webmobtv .connector {
+        background: url('../images/content-api.png');
+        display: block;
+        width: 137px;
+        height: 63px;
+        position: absolute;
+        left: -150px;
+        top: 10px;
+    }
+
 /*------------------------------------FOOTER -----------------------------------------*/
 .footer {
     position: relative;
