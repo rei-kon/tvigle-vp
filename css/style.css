@@ -432,11 +432,32 @@ ul.dashed li:before {
     padding: 10px 15px;
     margin: 0 -5px;
     margin-bottom: 1em;
-    display: inline-block;
-}
-.curved.yellow {
-    background: #ebaf0f;    
-}
+    display: inline-block;    
+    }
+    .curved.curved-all {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .curved.curved-all .curved-inner {
+        border-bottom-left-radius: 100% 5px;
+        border-top-left-radius: 100% 5px;
+        border-bottom-right-radius: 100% 5px; 
+        border-top-right-radius: 100% 5px; 
+        -webkit-border-bottom-left-radius: 100% 5px;
+        -webkit-border-top-left-radius: 100% 5px;
+        -webkit-border-bottom-right-radius: 100% 5px; 
+        -webkit-border-top-right-radius: 100% 5px; 
+        padding: 10px 15px;
+        display: inline-block;
+    }
+    .curved.yellow,
+    .curved-all.yellow .curved-inner {
+        background: #ebaf0f;
+    }
+    .curved-all.yellow {
+        background: transparent;
+    }
 .promo-text {
     display: block;    
     color: #FFF;    
@@ -678,6 +699,81 @@ ul.dashed li:before {
         top: 10px;
     }
 
+.reklama-page {}
+    .reklama-page .pagetext {
+        float: left;
+        width: 68%;
+        margin: 0;
+        }
+        .reklama-page .col-cont {
+            padding: 0 30px;    
+        }
+        .reklama-page .pagetext h2 {
+            font-size: 39px;
+            padding-right: 50px;
+        }
+        .reklama-page .pagetext a {
+            color: #333333;
+            text-decoration: none;            
+        }
+        .reklama-page .pagetext a:hover {
+            color: #f15612;
+        }
+        .reklama-page .pagetext p {
+            padding-right: 50px;
+        }
+        .reklama-page .pagetext .small {
+            font-size: 12px;
+            line-height: 1.4em;
+        }
+        .reklama-page .pagetext .curved {
+            margin: 25px -5px 35px -5px;
+        }
+        .reklama-page .pagetext .curved-inner {
+            font-size: 17px;
+            color: #FFF;
+            font-family: FranklinGothicMediumCondRegular,sans-serif;
+            padding: 15px;
+        }
+        .reklama-page .imaged-box .txt {
+            padding-right: 50px;
+            position: relative;
+            vertical-align: middle;
+        }
+        .reklama-page .imaged-box .txt .arrow {
+            display: block;
+            position: absolute;
+            right: -10px;
+            top:50%;
+            margin-top: -15px;
+            background: url('../images/char-gt.png') no-repeat center center;
+            width: 30px;
+            height: 30px;
+        }
+    .reklama-page .sidetext {
+        float: right;
+        width: 30%;
+        color: #a6a49f;
+        font-size: 14px;
+        font-family: FranklinGothicMediumCondRegular,sans-serif;
+        margin-top: 45px;
+        }
+        .reklama-page .sidetext ul {
+            padding-right: 30px;
+        }
+        .reklama-page .sidetext ul li {
+            margin-bottom: 13px;
+        }
+        .reklama-page .sidetext ul ul {
+            font-size: 12px;
+            padding-top: 5px;
+        }
+        .reklama-page .sidetext ul ul li {
+            margin-bottom: 5px;
+        }
+        .reklama-page .sidetext ul ul li:before {
+            content: "";
+        }
 /*------------------------------------FOOTER -----------------------------------------*/
 .footer {
     position: relative;
