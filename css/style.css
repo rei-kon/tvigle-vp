@@ -374,52 +374,52 @@ ul.dashed li:before {
     padding-top: 2px;
 }
 .submenu {}
-.submenu.left {
-    padding: 50px 0 0 29px;
-    width: 300px;
-}
-.submenu.left ul {
-   
-}
-.submenu ul li {
-    color: #a6a49f;
-    font-family: franklingothicbookxcmpcRg,sans-serif;
-    font-size: 26px;
-    line-height: 1em;
-    font-weight: normal;
-    margin-bottom: 21px;
-}
-.submenu ul li a {
-    display: inline-block;
-    text-decoration: none;
-    color: #a6a49f;
-    transition: color 200ms linear 0s;
-}
-.submenu ul li a:hover {
-    color: #000;
-    transition: color 200ms linear 0s;
-}
-.submenu ul li.active a {
-    color: #f15612;
-} 
+    .submenu.left {
+        padding: 50px 0 0 29px;
+        width: 300px;
+    }
+    .submenu.left ul {
+       
+    }
+    .submenu ul li {
+        color: #a6a49f;
+        font-family: franklingothicbookxcmpcRg,sans-serif;
+        font-size: 26px;
+        line-height: 1em;
+        font-weight: normal;
+        margin-bottom: 21px;
+    }
+    .submenu ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #a6a49f;
+        transition: color 200ms linear 0s;
+    }
+    .submenu ul li a:hover {
+        color: #000;
+        transition: color 200ms linear 0s;
+    }
+    .submenu ul li.active a {
+        color: #f15612;
+    } 
 .pagetext {
     margin-left: 330px;
     padding-top: 36px;
-}
-.pagetext h2 {
-    font-family: franklingothicbookxcmpcRg, sans-serif;
-    font-weight: normal;
-    font-size: 42px;
-    color: #333333;
-    margin-bottom: 5px;
-}
-.pagetext p {
-    font-family: FranklinGothicMediumCondRegular, sans-serif;
-    color: #333333;
-    font-size: 16px;
-    line-height:21px;
-    margin-bottom: 1em;
-}
+    }
+    .pagetext h2 {
+        font-family: franklingothicbookxcmpcRg, sans-serif;
+        font-weight: normal;
+        font-size: 42px;
+        color: #333333;
+        margin-bottom: 5px;
+    }
+    .pagetext p {
+        font-family: FranklinGothicMediumCondRegular, sans-serif;
+        color: #333333;
+        font-size: 16px;
+        line-height:21px;
+        margin-bottom: 1em;
+    }
 .curved {
     border-bottom-left-radius: 10px 100%;
     border-top-left-radius: 10px 100%;
@@ -458,27 +458,33 @@ ul.dashed li:before {
     .curved-all.yellow {
         background: transparent;
     }
+.opisanie .curved {
+    margin: 0 -5px 15px -5px;
+}
+.opisanie .curved.curved-all .curved-inner {
+    display: block;
+}
 .promo-text {
     display: block;    
     color: #FFF;    
-}
-.promo-text table {
-    width: 100%;
-}
-.promo-text p {
-    color: #FFF;
-    font-size: 18px;
-    line-height: 24px;
-    margin: -5px 0 0 0;
-    padding-left: 3px;
-    font-family: FranklinGothicMediumCondRegular, sans-serif;
-}
-.promo-text .num {
-    font-size: 52px;
-    line-height: 1em;
-    font-weight: bold;
-    font-family: franklingothicbookxcmpcRg, sans-serif;
-}
+    }
+    .promo-text table {
+        width: 100%;
+    }
+    .promo-text p {
+        color: #FFF;
+        font-size: 18px;
+        line-height: 24px;
+        margin: -5px 0 0 0;
+        padding-left: 3px;
+        font-family: FranklinGothicMediumCondRegular, sans-serif;
+    }
+    .promo-text .num {
+        font-size: 52px;
+        line-height: 1em;
+        font-weight: bold;
+        font-family: franklingothicbookxcmpcRg, sans-serif;
+    }
 .btn-try {
     font-size: 31px;
     font-family: franklingothicbookxcmpcRg, sans-serif;
@@ -500,7 +506,7 @@ ul.dashed li:before {
     margin-bottom: 1em;
     display: inline-block;
     position: relative;
-}
+    }
     .btn-try span {
         padding-left: 43px;
         position: relative;
