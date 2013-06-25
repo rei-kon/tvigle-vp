@@ -217,6 +217,9 @@ ul, li {
 .content {
     margin: 25px 64px;
 }
+.inner .content {
+    margin-top: 22px;
+}
 .col {
     float: left;
 }
@@ -292,6 +295,9 @@ ul, li {
     margin-top: 40px;
     text-align: center;
 }
+.inner .menu {
+    margin-top: 0px;
+}
 .menu ul {
     padding-top: 11px;
 }
@@ -304,6 +310,10 @@ ul, li {
     top:0;
     z-index: 1;
     width: 449px;
+}
+.inner .menu .left-part,
+.inner .menu .right-part {
+    background-image: url("../images/menu-inner.png");
 }
 .menu .right-part {
     background-position: right 0;
@@ -343,6 +353,128 @@ ul, li {
 }
 .menu li.font28 a {
     font-size: 28px;
+}
+.inner .menu li {
+    padding-top: 8px;
+}
+.inner .menu li.font28 {
+    padding-top: 5px;
+}
+.inner .menu li.registration-button {
+    padding-top: 2px;
+}
+.submenu {}
+.submenu.left {
+    padding: 50px 0 0 29px;
+    width: 300px;
+}
+.submenu.left ul {
+   
+}
+.submenu ul li {
+    color: #a6a49f;
+    font-family: franklingothicbookxcmpcRg,sans-serif;
+    font-size: 26px;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 21px;
+}
+.submenu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #a6a49f;
+    transition: color 200ms linear 0s;
+}
+.submenu ul li a:hover {
+    color: #f15612;
+    transition: color 200ms linear 0s;
+}
+.pagetext {
+    margin-left: 330px;
+    padding-top: 36px;
+}
+.pagetext h2 {
+    font-family: franklingothicbookxcmpcRg, sans-serif;
+    font-weight: normal;
+    font-size: 42px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+.pagetext p {
+    font-family: FranklinGothicMediumCondRegular, sans-serif;
+    color: #333333;
+    font-size: 16px;
+    line-height:21px;
+    margin-bottom: 1em;
+}
+.curved {
+    border-bottom-left-radius: 10px 100%;
+    border-top-left-radius: 10px 100%;
+    border-bottom-right-radius: 10px 100%; 
+    border-top-right-radius: 10px 100%; 
+    -webkit-border-bottom-left-radius: 10px 100%;
+    -webkit-border-top-left-radius: 10px 100%;
+    -webkit-border-bottom-right-radius: 10px 100%; 
+    -webkit-border-top-right-radius: 10px 100%; 
+    padding: 10px 15px;
+    margin: 0 -5px;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+.curved.yellow {
+    background: #ebaf0f;    
+}
+.promo-text {
+    display: block;    
+    color: #FFF;    
+}
+.promo-text table {
+    width: 100%;
+}
+.promo-text p {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 24px;
+    margin: -5px 0 0 0;
+    padding-left: 3px;
+    font-family: FranklinGothicMediumCondRegular, sans-serif;
+}
+.promo-text .num {
+    font-size: 52px;
+    line-height: 1em;
+    font-weight: bold;
+    font-family: franklingothicbookxcmpcRg, sans-serif;
+}
+.btn-try {
+    font-size: 31px;
+    font-family: franklingothicbookxcmpcRg, sans-serif;
+    color: #FFF;
+    background-color: #cdcbc4;    
+    transition: background-color 200ms linear 0s;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-bottom-left-radius: 5px 100%;
+    border-top-left-radius: 5px 100%;
+    border-bottom-right-radius: 5px 100%; 
+    border-top-right-radius: 5px 100%; 
+    -webkit-border-bottom-left-radius: 5px 100%;
+    -webkit-border-top-left-radius: 5px 100%;
+    -webkit-border-bottom-right-radius: 5px 100%; 
+    -webkit-border-top-right-radius: 5px 100%; 
+    padding: 12px 20px 13px 25px;
+    margin: 0 -5px;
+    margin-bottom: 1em;
+    display: inline-block;
+    position: relative;
+}
+.btn-try span {
+    padding-left: 43px;
+    position: relative;
+    top: -2px;
+}
+.btn-try:hover {
+    background-color: #f15612;
+    transition: background-color 200ms linear 0s;
 }
 /*------------------------------------FOOTER -----------------------------------------*/
 .footer {
