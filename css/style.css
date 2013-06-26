@@ -643,25 +643,132 @@ ul.dashed li:before {
 .capabilities.help-variant .text,
 .capabilities.help-variant h2 {
     padding-left: 20px;
-}
+    }
 
-.capabilities.help-variant h2 {
-    position: relative;
-}
-.capabilities.help-variant h2:before {
-    content: "—";
-    position: absolute;
-    left: 0;
-}
-.capabilities.help-variant .full-text .cont p {
-    color: #333333;
-    font-size: 14px;
-    line-height: 19px;
-}
+    .capabilities.help-variant h2 {
+        position: relative;
+    }
+    .capabilities.help-variant h2:before {
+        content: "—";
+        position: absolute;
+        left: 0;
+    }
+    .capabilities.help-variant .full-text .cont p {
+        color: #333333;
+        font-size: 14px;
+        line-height: 19px;
+    }
 
-.capabilities.help-variant .full-text .cont p:last-child {
-    margin-bottom: 0;
-}
+    .capabilities.help-variant .full-text .cont p:last-child {
+        margin-bottom: 0;
+    }
+
+.help-search,
+.help-search .h-l,
+.help-search .h-r {
+    background: url("../images/search-bg.png") no-repeat center 0;
+    height: 32px;
+    }
+    .help-search {
+        position: relative;  
+        margin: 13px -5px 20px -5px;
+    }
+    .help-search .h-l {
+        width: 200px;
+        background-position: 0 0;
+        position: absolute;        
+        top: 0;
+        left: 0;
+    }
+    .help-search .h-r {
+        width: 200px;
+        background-position: right 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .help-search form {
+        position: relative;
+        z-index: 3;
+        margin: 0 36px 0 0px;        
+    }
+    .help-search input {
+        background: transparent;
+        width: 100%;
+        display: block;
+        padding: 0 5px;
+        height: 32px;
+        font-size: 24px;
+        color: #333333;
+        font-family: franklingothicbookxcmpcRg, sans-serif;
+        border: 0;
+        outline: none;
+/*        background: red;
+        opacity: 0.5;*/
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .help-search button {
+        display: block;
+        width: 36px;
+        height: 32px;
+        background: transparent;
+        padding: 0;
+        border: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+.search-page {}
+
+.faq {}
+    .faq h2 {
+        font-size: 24px;
+        cursor: pointer;
+        padding: 5px 5px;
+        margin: 0;        
+        color: #333;
+        transition: color 200ms linear 0s;
+    }
+    .faq .opened h2 {
+        color: #f15612;
+    }
+    .faq h2:hover {
+        color: #f15612;
+        transition: color 200ms linear 0s;
+    }
+    .faq a {
+        color: #a6a49f;        
+        text-decoration: none;
+    }
+    .faq a:hover {
+        /*color: #f15612;*/
+        color: #333333;
+    }
+    .faq > ul > li {
+        background: url("../images/capabilities-line.png") no-repeat right 0;        
+    }
+    .faq > ul > li:first-child {
+        background: transparent;
+    }
+    .faq .txt {
+        display: none;
+        padding: 0 5px 5px 5px; 
+    }
+    .faq .txt li {
+        font-size: 16px;
+        font-family: FranklinGothicMediumCondRegular,sans-serif;
+        margin-bottom: 5px;
+        padding-right: 100px;
+        background: transparent;
+    }
+    .faq .marked {
+        color: #fff !important;
+        background: #ebaf0f;
+    }
+
 
 .distribution {}
     .distribution .list {

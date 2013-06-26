@@ -294,4 +294,19 @@ $(document).ready(function(){
         }
     });
 
+    $('.faq h2').on('click', function(e){
+        e.preventDefault();
+        var _this = $(this),
+            parent = _this.closest('li'),
+            fullText = parent.find('.txt');
+        if ( fullText.is(':animated') ) return;
+        if ( !parent.hasClass('opened') ) {
+            parent.addClass('opened');    
+            fullText.slideDown(600);
+        } else {
+            parent.removeClass('opened');                
+            fullText.slideUp(600);
+        }
+    });
+
 });
