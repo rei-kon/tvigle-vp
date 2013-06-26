@@ -780,6 +780,28 @@ ul.dashed li:before {
         .reklama-page .sidetext ul ul li:before {
             content: "";
         }
+
+.help-page {}
+    .help-page .submenu {
+        float: right;
+        padding: 50px 0 0 0;
+        width: 150px;
+    }
+    .help-page .pagetext {
+        margin-right: 300px;
+        margin-left: 0;
+        padding-left: 29px;
+    }
+    .help-page .pagetext h2 {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+    .help-page .pagetext .small {
+        font-size: 14px;
+        color: #a6a49f;
+        line-height: 1.4em;
+    }
+
 /*------------------------------------FOOTER -----------------------------------------*/
 .footer {
     position: relative;
