@@ -639,6 +639,30 @@ ul.dashed li:before {
                 background: url("../images/img-mask.png") no-repeat 0 0;
             }
 
+.capabilities.help-variant .full-text .cont,
+.capabilities.help-variant .text,
+.capabilities.help-variant h2 {
+    padding-left: 20px;
+}
+
+.capabilities.help-variant h2 {
+    position: relative;
+}
+.capabilities.help-variant h2:before {
+    content: "—";
+    position: absolute;
+    left: 0;
+}
+.capabilities.help-variant .full-text .cont p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.capabilities.help-variant .full-text .cont p:last-child {
+    margin-bottom: 0;
+}
+
 .distribution {}
     .distribution .list {
         padding-right: 100px;
