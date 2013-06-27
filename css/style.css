@@ -399,9 +399,18 @@ ul.dashed li:before {
         color: #000;
         transition: color 200ms linear 0s;
     }
-    .submenu ul li.active a {
+    .submenu ul li.active > a {
         color: #f15612;
     } 
+    .submenu ul ul {
+        padding-top: 10px;
+    }
+    .submenu ul ul li {
+        font-family: FranklinGothicMediumCondRegular, sans-serif;
+        font-size: 12px;
+        line-height: 1em;
+        margin-bottom: 10px;
+    }
 .pagetext {
     margin-left: 330px;
     padding-top: 36px;
@@ -1119,6 +1128,70 @@ ul.dashed li:before {
         margin: 0 35px 20px 0;
         text-align: center;
     }
+
+.map-page.pagetext {
+    margin-right: 150px;
+    }
+    .map {
+        position: relative;
+    }
+    .address-box {
+        position: absolute;
+        top: 190px;
+        left: 68px;
+    }
+    .address-box .text {
+        color: #FFF;
+        font-size: 16px;
+        position: relative;
+    }
+    .address-box .text h2 {
+        font-size: 30px;
+        color: #FFF;
+        margin-bottom: 10px;
+    }
+    .address-box .text p {
+        margin: 10px 0 0px 0;
+        line-height: 1.2em;
+        color: #fff;
+        position: relative;
+    }
+
+    .address-box .text a {
+        color: #fff;
+        transition: color 200ms linear 0s;
+        text-decoration: none;
+    }
+    .address-box .text a:hover {
+        color: #333;
+        color: #f15612;
+        transition: color 200ms linear 0s;
+    }
+
+    .address-box .curved.curved-all .curved-inner {
+        border-radius: 100% 100% 100% 100% / 10px 10px 10px 10px;
+        -webkit-border-radius: 100% 100% 100% 100% / 10px 10px 10px 10px;
+        padding: 20px 25px 25px;
+    }
+
+    .address-box .pointer {
+        display: block;
+        width: 263px;
+        height: 94px;
+        background: url('../images/map-pointer.png') no-repeat 0 0 transparent;        
+        position: absolute;
+        left: 50%;
+        top: -67px;
+    }
+
+    .phone-num { 
+        position: relative;
+        }
+        .phone-num .plus { 
+            position: absolute;
+            margin-left: -10px;
+        }
+
 
 /*------------------------------------FOOTER -----------------------------------------*/
 .footer {
