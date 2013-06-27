@@ -421,14 +421,16 @@ ul.dashed li:before {
         margin-bottom: 1em;
     }
 .curved {
-    border-bottom-left-radius: 10px 100%;
+/*    border-bottom-left-radius: 10px 100%;
     border-top-left-radius: 10px 100%;
     border-bottom-right-radius: 10px 100%; 
     border-top-right-radius: 10px 100%; 
     -webkit-border-bottom-left-radius: 10px 100%;
     -webkit-border-top-left-radius: 10px 100%;
     -webkit-border-bottom-right-radius: 10px 100%; 
-    -webkit-border-top-right-radius: 10px 100%; 
+    -webkit-border-top-right-radius: 10px 100%; */
+    border-radius:  10px 10px 10px 10px / 100% 100% 100% 100%;
+    -webkit-border-radius:  10px 10px 10px 10px / 100% 100% 100% 100%;
     padding: 10px 15px;
     margin: 0 -5px;
     margin-bottom: 1em;
@@ -440,14 +442,16 @@ ul.dashed li:before {
         overflow: hidden;
     }
     .curved.curved-all .curved-inner {
-        border-bottom-left-radius: 100% 5px;
+        border-radius:  100% 100% 100% 100% / 5px 5px 5px 5px;
+        -webkit-border-radius:  100% 100% 100% 100% / 5px 5px 5px 5px;
+        /*border-bottom-left-radius: 100% 5px;
         border-top-left-radius: 100% 5px;
         border-bottom-right-radius: 100% 5px; 
         border-top-right-radius: 100% 5px; 
         -webkit-border-bottom-left-radius: 100% 5px;
         -webkit-border-top-left-radius: 100% 5px;
         -webkit-border-bottom-right-radius: 100% 5px; 
-        -webkit-border-top-right-radius: 100% 5px; 
+        -webkit-border-top-right-radius: 100% 5px; */
         padding: 10px 15px;
         display: inline-block;
     }
@@ -492,15 +496,8 @@ ul.dashed li:before {
     background-color: #cdcbc4;    
     transition: background-color 200ms linear 0s;
     text-decoration: none;
-    padding: 13px 25px;
-    border-bottom-left-radius: 5px 100%;
-    border-top-left-radius: 5px 100%;
-    border-bottom-right-radius: 5px 100%; 
-    border-top-right-radius: 5px 100%; 
-    -webkit-border-bottom-left-radius: 5px 100%;
-    -webkit-border-top-left-radius: 5px 100%;
-    -webkit-border-bottom-right-radius: 5px 100%; 
-    -webkit-border-top-right-radius: 5px 100%; 
+    border-radius: 5px 5px 5px 5px / 100% 100% 100% 100%;
+    -webkit-border-radius: 5px 5px 5px 5px / 100% 100% 100% 100%;
     padding: 12px 20px 13px 25px;
     margin: 0 -5px;
     margin-bottom: 1em;
@@ -982,6 +979,132 @@ ul.dashed li:before {
         display: inline-block;
         width: 100px;
         height: 30px;
+        background: transparent;
+    }
+
+.help-page.ask {}
+    .help-page.ask h2 {
+        margin-bottom: 25px;
+    }
+    .help-page.ask .pagetext {
+        text-align: center;
+        padding-left: 300px;
+        background: url('../images/tv-ask.png') no-repeat 15% 70px;
+    }
+
+    .textarea-box {
+        display: inline-block;
+        width: 263px;
+        position: relative;
+        border: 1px solid #d0cdc6;
+        background: #fff;
+        }
+        .textarea-box .c {
+            position: absolute;
+            width: 100px;
+            height: 60px;
+            background: url('../images/textarea.png') no-repeat;
+        }
+            .textarea-box .c01 {
+                left: -1px;
+                top: -1px;
+                background-position: 0 0;
+            }
+            .textarea-box .c02 {
+                right: -1px;
+                top: -1px;
+                background-position: right 0;
+            }
+            .textarea-box .c03 {
+                left: -1px;
+                bottom: -1px;
+                background-position: 0 bottom;
+            }
+            .textarea-box .c04 {
+                right: -1px;
+                bottom: -1px;
+                background-position: right bottom;
+            }
+
+
+    .help-page.ask textarea {
+        /*background: rgba(0,255,0,0.5);*/
+        background: transparent;
+        border: 0;
+        padding: 15px;
+        width: 100%;
+        height: 132px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+        width: 263px;
+        min-width: 263px;
+        max-width: 263px;
+        min-height: 120px;        
+    }
+    
+    .help-page.ask textarea,
+    .help-page.ask input.custom {
+        font-family: FranklinGothicMediumCondRegular,sans-serif;
+        font-weight: normal;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .help-page.ask input.custom {
+        background: url('../images/input.png') no-repeat 0 0  transparent;
+        width: 233px;
+        height: 32px;
+        padding: 0 15px;
+        border: 0;
+    }
+
+    .help-page.ask label {
+        color: #a6a49f;
+        font-family: FranklinGothicMediumCondRegular,sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        display: block;
+        padding-bottom: 3px;
+    }
+
+    .help-page.ask p {
+        margin: 0 0 10px 0;
+    }
+
+    .help-page.ask .submit-box {
+        margin-top: 30px;
+    }
+
+    .help-page.ask .submit {        
+        width: 196px;
+        height: 49px;
+        background: url('../images/btn-gold.png') no-repeat 0 0 transparent;
+        font-size: 30px;
+        color: #FFF;
+        font-family: franklingothicbookxcmpcRg,sans-serif;
+        padding: 0;
+        border: 0;
+        cursor: pointer;
+    }
+
+
+    .help-page.ask .submit-box .curved.curved-all {
+
+    }
+    .help-page.ask .submit-box .curved {
+        border-radius: 5px 5px 5px 5px / 100% 100% 100% 100%;
+        padding: 0;
+        background-color: #ebaf0f;
+        transition: background-color 200ms linear 0s;
+    }
+    .help-page.ask .submit-box .curved:hover {        
+        background-color: #f15612;        
+        transition: background-color 200ms linear 0s;
+    }
+
+    .help-page.ask .submit-box .curved .submit {
         background: transparent;
     }
 
