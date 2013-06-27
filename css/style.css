@@ -934,6 +934,57 @@ ul.dashed li:before {
         line-height: 1.4em;
     }
 
+.download { position: relative;}
+    .download .img {
+        position: absolute;
+        right: 0;
+        top: -64px;
+        display: block;
+        width: 139px;
+        height: 118px;
+        background: url('../images/tv.png') no-repeat 0 0;
+    }
+    .download .curved {
+        font-family: franklingothicbookxcmpcRg,sans-serif;
+        font-size: 30px;
+        margin-left: -5px;
+        }
+        .download .curved.curved-all .curved-inner {
+            padding: 10px 20px 10px 65px;
+            background-image: url('../images/icon-download.png');
+            background-repeat: no-repeat;
+            background-position: 20px center;
+            color: #FFF;
+            background-color: #ebaf0f;
+            transition: background-color 200ms linear 0s;
+        }
+        .download .curved.curved-all:hover .curved-inner {
+            background-color: #f15612;
+            transition: background-color 200ms linear 0s;
+        }
+    .download .separate {
+        margin-top: 30px;
+        font-size: 23px;
+        font-family: franklingothicbookxcmpcRg,sans-serif;
+        }
+        .download .separate a {
+            color: #a6a49f;
+            transition: color 200ms linear 0s;
+        }
+        .download .separate a:hover {
+            color: #333;
+            transition: color 200ms linear 0s;
+        }
+
+    h2.right-indent {}
+    h2.right-indent::after {
+        content: "";
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        background: transparent;
+    }
+
 /*------------------------------------FOOTER -----------------------------------------*/
 .footer {
     position: relative;
