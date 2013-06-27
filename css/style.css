@@ -413,6 +413,9 @@ ul.dashed li:before {
         color: #333333;
         margin-bottom: 5px;
     }
+    .pagetext h2.gold {
+        color: #ebaf0f;
+    }
     .pagetext p {
         font-family: FranklinGothicMediumCondRegular, sans-serif;
         color: #333333;
@@ -1106,6 +1109,15 @@ ul.dashed li:before {
 
     .help-page.ask .submit-box .curved .submit {
         background: transparent;
+    }
+
+.partners {}
+    .partners .one { 
+        display: inline-block; 
+        vertical-align: middle;
+        width: 55px;
+        margin: 0 35px 20px 0;
+        text-align: center;
     }
 
 /*------------------------------------FOOTER -----------------------------------------*/
