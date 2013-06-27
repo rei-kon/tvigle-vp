@@ -309,4 +309,37 @@ $(document).ready(function(){
         }
     });
 
+    $('.tarif tr')
+        .mouseenter(function(){
+            var tr = $(this);
+            if ( tr.hasClass('head') ) return;
+            tr.addClass('hover');
+            if ( !tr.is(':first-child') ) {
+                if ( tr.prev().hasClass('head') ) return;
+                tr.prev().addClass('preHover');
+            }
+        })
+        .mouseleave(function(){
+            var tr = $(this);
+            tr.removeClass('hover');
+            tr.prev().removeClass('preHover');
+        });
+
+    $('.tarifs-toggle').on('click', function(e){
+        e.preventDefault();
+        var _this = $(this),
+            open = $(this).find('.open'),
+            clos = $(this).find('.clos'),
+            fullText = $('.tarifs-additional');
+        if ( fullText.is(':animated') ) return;
+        if ( fullText.is(':hidden') ) {
+            open.fadeOut();
+            clos.fadeIn();
+        } else  {
+            clos.fadeOut();
+            open.fadeIn();
+        }
+        fullText.slideToggle(600);
+    });
+    
 });

@@ -1193,6 +1193,241 @@ ul.dashed li:before {
         }
 
 
+.tarifs-page {
+        position: relative;
+        padding-top: 40px;
+    }
+
+    .tarifs-page .line {
+        position: relative;
+        height: 50px;
+        background: url('../images/tarif-top-bg.png') repeat-x 0 -52px;      
+        text-align: center;
+    }
+    .tarifs-page .line .left,
+    .tarifs-page .line .right {
+        background: url('../images/tarif-top.png') no-repeat;
+        position: absolute;
+        top: 0;
+        height: 50px;
+        width: 380px;
+    }
+    .tarifs-page .line .left {
+        left: 0;
+        background-position: left -52px;
+    }
+    .tarifs-page .line .right {
+        right: 0;
+        background-position: right -52px;
+    }
+    .tarifs-page .line.top {
+        margin-bottom: -62px;
+    }
+
+    .tarifs-page .line.bottom {
+        background: url('../images/tarif-bottom-bg.png') repeat-x 0 -32px;
+    }
+    .tarifs-page .line.bottom .left {
+        background: url('../images/tarif-bottom.png') left -32px;
+    }
+    .tarifs-page .line.bottom .right {
+        background: url('../images/tarif-bottom.png') right -32px;
+    }
+
+    .tarifs-page .line.bottom .text {
+        background: #f4f2e9;
+        color: #bcbbb5;
+        display: inline-block;
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+        font-family: franklingothicbookxcmpcRg,sans-serif;
+        padding-top: 8px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .tarifs-page .line.bottom .text .open,
+    .tarifs-page .line.bottom .text .clos {
+        display: block;
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 200px;        
+    }
+
+    .tarifs-page .line.bottom .text .clos {
+        display: none;
+        padding-top: 10px;
+    }
+
+    .tarifs-page .button {
+        text-align: center;        
+    }
+    .tarifs-page .button a.curved {
+        font-family: franklingothicbookxcmpcRg,sans-serif;
+        font-size: 30px;
+        color: #FFF;
+        border-radius: 5px 5px 5px 5px / 100% 100% 100% 100%;
+        width: 170px;
+        text-decoration: none;
+        transition: background-color 200ms linear 0s;   
+        background-color: #ebaf0f;
+        margin: 0;
+    }
+    .tarifs-page .button a.curved:hover {
+        transition: background-color 200ms linear 0s;   
+        background-color: #f15612;
+    }
+
+    .tarifs-page .placeholder {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tarifs-page .button {
+        padding-top: 25px;
+    }
+    .tarifs-page .button .more {
+        font-family: FranklinGothicMediumCondRegular,sans-serif;
+        position: absolute;
+        font-size: 14px;
+        color: #a6a49f;
+        right: -165px;
+        text-align: left;
+        top: 20px;
+        width: 150px;
+        }
+        .tarifs-page .button .more a {
+            color: #a6a49f;
+            transition: color 200ms linear 0s;   
+        }
+        .tarifs-page .button .more a:hover {
+            color: #333;
+            transition: color 200ms linear 0s;   
+        }
+        
+
+.tarif {
+    border-collapse: collapse;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    font-family: franklingothicbookxcmpcRg,sans-serif;
+    }
+
+.additional {
+    display: none;
+}
+    .tarif tr td:first-child {
+        padding-left: 29px;
+    }
+
+    .tarif .label { width: 25%}
+    .tarif .col1,
+    .tarif .col2,
+    .tarif .col3,
+    .tarif .col4,
+    .tarif .col5 {
+        width: 15%
+    }
+
+    .tarif th {
+        font-size: 26px;
+        text-align: left;
+        font-weight: normal;
+        color: #333333;
+        padding: 10px 10px 15px 10px;
+    }
+
+    .tarif th .small {
+        font-size: 15px;
+        vertical-align: top;        
+    }
+
+    .tarif td {
+        font-size: 22px;
+        text-align: left;
+        font-weight: normal;
+        color: #333333;
+        padding: 10px ;
+    }
+
+    .tarif .big {
+        font-size: 24px;
+    }
+
+    .tarif .gold {
+        color: #ebaf0f;
+    }
+
+    .tarif .red {
+        color: #f15612;
+    }
+
+    .tarif .ico {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url('../images/tarif-icons.png') no-repeat 0 0 transparent;        
+        }
+        .tarif .ico.star.empty {
+            background-position: -16px 0;
+        }
+        .tarif .ico.star.gold {
+            background-position: 0 0;
+        }
+        .tarif .ico.mail {
+            background-position: -32px 0;
+        }
+        .tarif .ico.phone {
+            background-position: -48px 0;
+        }
+        .tarif .ico.inf {
+            width: 18px;
+            background-position: -82px 0;
+        }
+        .tarif .ico.inf.gold {
+            background-position: -64px 0;
+        }
+
+    .tarif tr { 
+        opacity: 0.5;
+        cursor: pointer;
+        transition: opacity 200ms linear 0s;
+    }
+
+    .tarif tr td {
+        border: 1px solid transparent;
+        border-width: 1px 0 1px 0;
+    }
+
+    .tarif tr.main { opacity: 1 }
+
+    .tarif tr:hover { 
+        opacity: 1;
+        transition: opacity 200ms linear 0s;
+    }
+
+    .tarif .plus {
+        display: inline-block;
+        width: 17px;
+        text-align: center;
+    }
+
+    .tarif tr.head + tr.hover td {
+        border-top-color: transparent;
+    }
+
+    .tarif tr.hover td {
+        border-color: #b6b5b0;
+    }
+
+    .tarif tr.preHover td {
+        border-bottom-color: #b6b5b0;
+    }
+
+
 /*------------------------------------FOOTER -----------------------------------------*/
 .footer {
     position: relative;
