@@ -672,6 +672,7 @@ ul.dashed li:before {
     .help-search {
         position: relative;  
         margin: 13px -5px 20px -5px;
+        overflow: hidden;
     }
     .help-search .h-l {
         width: 200px;
