@@ -139,7 +139,7 @@ Menu = (function(){
 
     Core.prototype.moveTo = function(width, offset, element){
         var self = this;
-        this.element.find('a').removeClass('hovered')
+        this.element.find('a').removeClass('hovered');
         this.button.animate({
             left:offset + element.position().left - 50,
             width:width
@@ -230,27 +230,22 @@ $(document).ready(function(){
             height;
 
         if($(this).hasClass('opened-footer')){
-            // top = 0;
             opacity = 0.1;
             height = 81;
         }
         else {
-            // top = 57;
             opacity = 1;
             height = 138;
         }
         $(this).toggleClass('opened-footer');
         footer.animate({
             height: height//,
-            // top: -top
         },300)
         push.animate({
             height: height//,
-            // top: -top
         },300)
         wrapper.animate({
             marginBottom: -height//,
-            // top: -top
         },300)
         footer.find('.col').animate({
             opacity:opacity
@@ -282,13 +277,13 @@ $(document).ready(function(){
         if ( parent.hasClass('closed') ) {
             btnClose.fadeIn();
             btnOpen.fadeOut();
-            fullText.slideDown(600,function(){
+            fullText.slideDown(300,function(){
                parent.removeClass('closed');
             });
         } else {
             btnClose.fadeOut();
             btnOpen.fadeIn();
-            fullText.slideUp(600,function(){
+            fullText.slideUp(300,function(){
                parent.addClass('closed');
             });
         }
@@ -302,10 +297,10 @@ $(document).ready(function(){
         if ( fullText.is(':animated') ) return;
         if ( !parent.hasClass('opened') ) {
             parent.addClass('opened');    
-            fullText.slideDown(600);
+            fullText.slideDown(300);
         } else {
             parent.removeClass('opened');                
-            fullText.slideUp(600);
+            fullText.slideUp(300);
         }
     });
 
