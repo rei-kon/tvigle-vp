@@ -11,10 +11,41 @@
     <div class="popup">
         <div class="log-reg-wrap">
             <div id="login" class="login-layout">
+                <div class="login-content">
+                    <h2>Вход в личный кабинет</h2>
+                    <label for="login-email">Логин</label>
+                    <input type="text" id="login-email" />
+                    <label for="login-password">Пароль</label>
+                    <input type="password" id="login-password" />
+                    <p class="error">Пароль, который вы ввели, увы, не подходит :-(</p>
+                    <a class="forgotten" href="#">Забыли свой пароль?</a>
+                    <a href="#" class="login-button"></a>
+                    <div class="clear"></div>
+                </div>
                 <div class="reg-btn log-reg-btn">Регистрация</div>
                 <div class="close"></div>
             </div>
             <div id="registration" class="registration-layout">
+                <h2>Регистрация</h2>
+                <div>
+                    <input type="text" id="reg-name" />
+                    <label for="reg-name">Имя:</label>
+                </div>
+                <div>
+                    <input type="text" id="reg-email" />
+                    <label for="reg-email">Email:</label>
+                </div>
+                <div>
+                    <input type="text" id="reg-login" />
+                    <label for="reg-login">Логин:</label>
+                </div>
+                <div>
+                    <input type="text" id="reg-address" />
+                    <label for="reg-address">Адрес вашего сайта:</label>
+                </div>
+                <div class="clear"></div>
+                <p class="notification">Пароль будет отправлен на ваш email</p>
+                <a href="#" class="register-me">Зарегистрироваться</a>
                 <div class="log-btn log-reg-btn">Вход в личный кабинет</div>
                 <div class="close"></div>
             </div>

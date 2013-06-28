@@ -1108,3 +1108,96 @@ ul.dashed li:before {
     top:0;
     display: none;
 }
+/*--------------------------------- LOGIN FORM --------------------------*/
+.login-content h2 {
+    color: #ebb013;
+    font-family: franklingothicbookxcmpcRg, sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.log-reg-wrap {
+    text-align: center;
+}
+.log-reg-wrap input:focus {
+    outline:none;
+}
+.log-reg-wrap label {
+    display: block;
+    color: #a9a9a9;
+    font-family: franklingothicmediumcondregular, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 21px 0 2px 0;
+}
+.log-reg-wrap .error {
+    color: #be3033;
+    font-family: franklingothicmediumcondregular, sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.log-reg-wrap input {
+    background: url("../images/input-bg.png") no-repeat 0 0;
+    width: 253px;
+    height: 32px;
+    border: none;
+    color: #333333;
+    font-family: franklingothicmediumcondregular, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 5px;
+}
+input[type="password"] {
+    text-align: center;
+}
+.forgotten {
+    color: #ebaf0f;
+    font-family: franklingothicmediumcondregular, sans-serif;
+    font-size: 14px;
+    float: left;
+    margin: 27px 0 0 51px;
+}
+.login-button {
+    float: right;
+    width: 55px;
+    height: 49px;
+    background: url("../images/login-btn.png") no-repeat 0 0;
+    margin: 12px 50px 0 0;
+}
+/*---------------------------  REGISTRATION -----------------------------*/
+.registration-layout label {
+    display: inline-block;
+    color: #fff;
+    float: right;
+}
+.registration-layout h2 {
+    color: #fff;
+    font-family: franklingothicbookxcmpcRg, sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.registration-layout div input {
+    float: right;
+    margin: 15px 15px 0 15px;
+    width: 175px;
+    height: 32px;
+    background: url("../images/register-input.png") no-repeat 0 0;
+}
+.registration-layout p {
+    color: #fff;
+    opacity: 0.7;
+    font-family: franklingothicmediumcondregular, sans-serif;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.register-me {
+    background: url("../images/regist-btn.png") no-repeat 0 0;
+    width: 196px;
+    height: 42px;
+    display: inline-block;
+    color: #fff;
+    font-family: franklingothicbookxcmpcRg, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    padding-top: 7px;
+    margin-top: 10px;
+}
